@@ -1,0 +1,9 @@
+---
+title: "In-class project"
+ html: 
+   toc: true
+   self-contained: true
+   df-print: paged
+   code-link: true
+lightbox: true
+---
