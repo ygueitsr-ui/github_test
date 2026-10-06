@@ -7,3 +7,18 @@ title: "In-class project"
    code-link: true
 lightbox: true
 ---
+
+# # Install gssr 
+# install.packages('gssr', repos = c('https://kjhealy.r-universe.dev', 'https://cloud.r-project.org'))
+
+library(tidyverse)
+library(gssr)
+library(haven)
+
+# Load full cumulative dataset
+data(gss_all)
+
+# Check variable presence across survey years
+# Verify that your chosen political/policy questions were asked in recent waves containing Gen Z
+gss_all |>
+  gss_which_years(c(polviews, partyid, grass, cappun, abany))
